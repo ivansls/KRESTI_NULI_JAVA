@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/start"
+        android:text="СБРОС"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/one_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        />
+
+    <ImageButton
+        android:id="@+id/one_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        style="@style/MyImage"
+        />
+
+    <ImageButton
+        android:id="@+id/two_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/one_btn"
+        app:layout_constraintTop_toBottomOf="@+id/three_btn"
+        style="@style/MyImage"
+       />
+
+    <ImageButton
+        android:id="@+id/three_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/two_btn"
+        style="@style/MyImage"
+        />
+
+
+    <ImageButton
+        android:id="@+id/thou_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/one_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        style="@style/MyImage"
+        />
+
+    <ImageButton
+        android:id="@+id/five_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toStartOf="@id/two_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/thou_btn"
+        app:layout_constraintTop_toBottomOf="@+id/six_btn"
+        style="@style/MyImage"
+        />
+
+    <ImageButton
+        android:id="@+id/six_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/one_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/five_btn"
+        style="@style/MyImage"
+        />
+
+
+    <ImageButton
+        android:id="@+id/seven_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/one_btn"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        style="@style/MyImage"
+        />
+
+    <ImageButton
+        android:id="@+id/eight_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/two_btn"
+        app:layout_constraintBottom_toTopOf="@+id/thou_btn"
+        app:layout_constraintTop_toBottomOf="@+id/six_btn"
+        style="@style/MyImage"
+         />
+
+    <ImageButton
+        android:id="@+id/nine_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/three_btn"
+        app:layout_constraintTop_toBottomOf="@+id/eight_btn"
+        style="@style/MyImage"
+        />
+
+    <ImageButton
+        android:id="@+id/themeCH"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="20dp"
+        android:background="#00000000"
+        android:src="@drawable/ic_night"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/MyImage"/>
+    
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="КРЕСТИКИ-НОЛИКИ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/themeCH"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/you_win"
+        android:text="ВЫ: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/one_btn"
+        app:layout_constraintEnd_toStartOf="@+id/start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+    <TextView
+        android:id="@+id/robot_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="РОРБОТ: "
+        app:layout_constraintBottom_toTopOf="@+id/one_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/start"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+    <TextView
+        android:id="@+id/nicro_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="НИЧЬИ: "
+        app:layout_constraintBottom_toTopOf="@+id/one_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
